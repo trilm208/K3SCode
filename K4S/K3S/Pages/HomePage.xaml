@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+	x:Class="K3S.HomePage">
+	
+	<ContentPage.Resources>
+		<ResourceDictionary>
+	      <Style TargetType="Button">
+	       	<Setter Property="TextColor" Value="White"/>
+	        <Setter Property="FontSize" Value="20"/>
+		    <Setter Property="FontAttributes" Value="Bold"/>
+			<Setter Property="BackgroundColor" Value="#f49131"/>
+		  </Style>
+	    </ResourceDictionary>
+	</ContentPage.Resources>
+
+    
+
+    <StackLayout x:Name="stack" Spacing="5" Margin="10, 15">
+
+        <Grid HeightRequest="50"  >
+	        <Grid.ColumnDefinitions>
+                         
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="100"/>
+				<ColumnDefinition Width="100"/>
+               
+            </Grid.ColumnDefinitions>
+
+
+            <Label Grid.Row="0" Grid.Column="0" x:Name="txtUsername" FontSize="Small" FontAttributes="Bold" TextColor="Red"></Label>
+            <Button Grid.Row="0" Grid.Column="1" Text="Login" FontSize="Small" Clicked="btnLogin_Click"></Button>
+            <Button Grid.Row="0" Grid.Column="2" Text="Info" FontSize="Small" Clicked="btnUpdateWard_Click"></Button>
+      
+        </Grid>
+
+        <ScrollView>
+            <Grid x:Name="gProjectList">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </ScrollView>
+    </StackLayout>
+
+	
+</ContentPage>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	
+      xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+	x:Class="K3S.SurveyHomePage" Padding="10,10,10,10">
+	<StackLayout>
+        <Button x:Name="btnNew" Clicked="btnNew_Clicked"  TextColor="White" FontSize="Small" FontAttributes="Bold" BackgroundColor="#f49131"  HeightRequest="100"></Button>
+        <Label Text="Danh sách đã thực hiện" VerticalTextAlignment="Start" HorizontalTextAlignment="Start"  TextColor="Green" FontSize="Medium" FontAttributes="Bold"  ></Label>
+        <ScrollView>
+			<StackLayout x:Name="stackAnswer" Orientation="Vertical" HorizontalOptions ="FillAndExpand"></StackLayout>
+		</ScrollView>					
+	</StackLayout>
+</ContentPage>

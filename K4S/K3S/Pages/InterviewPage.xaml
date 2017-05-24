@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+	x:Class="K3S.InterviewPage" Title="Bảng câu hỏi">
+
+    <StackLayout Padding="10,10,10,10" Orientation="Vertical" >
+
+        <StackLayout Orientation="Horizontal" HeightRequest="55">
+
+            <Button x:Name="btnBack" WidthRequest="80"  Text="Back" TextColor="White" FontSize="12" FontAttributes="Bold" BackgroundColor="#f49131" Clicked="btnBack_Clicked"></Button>
+            <Button x:Name="btnSave" WidthRequest="80"  Text="Save" TextColor="White" FontSize="12" FontAttributes="Bold" BackgroundColor="Red" Clicked="btnSave_Clicked"></Button>
+            <Button x:Name="btnNext" HorizontalOptions="EndAndExpand" WidthRequest="80"  Text="Next" TextColor="White" FontSize="12" FontAttributes="Bold" BackgroundColor="#f49131" Clicked="btnNext_Clicked"></Button>
+        </StackLayout>
+        <StackLayout >
+            <ProgressBar x:Name="prbCompleted"></ProgressBar>
+        </StackLayout>
+        
+        <StackLayout x:Name="stackQuestionControls">
+           
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

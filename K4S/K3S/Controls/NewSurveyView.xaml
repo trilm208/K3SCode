@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="K3S.Controls.NewSurveyView">
+	<StackLayout>
+		<Button x:Name="btnClick" Text="Click here to create new survey" Clicked="btnClick_Clicked"></Button>
+		
+
+	</StackLayout>
+</ContentView>

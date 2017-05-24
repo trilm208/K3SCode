@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="K3S.Controls.ProjectView">
+
+ 	<Frame BackgroundColor="#8F043055" HasShadow="False">
+          <StackLayout x:Name="stack"
+	          Orientation="Vertical"
+	          Spacing="10">   
+
+			<StackLayout Orientation="Horizontal">
+				<StackLayout HorizontalOptions="StartAndExpand">
+				   <Label x:Name="lblProjectNo" TextColor="Black" FontSize="17"  ></Label>
+			       <Label x:Name="lblProjectName" TextColor="Black" FontSize="15" ></Label>
+			       <Label x:Name="lblVersionQne" TextColor="Black" FontSize="15" ></Label>
+				</StackLayout >
+				<StackLayout WidthRequest="150" HorizontalOptions="End"  >
+				   <Button x:Name="btnUpdate" Clicked="btnUpdate_Click" Text="Sync"   ></Button>
+				   <Button x:Name="btnStartSurvey" Text="Start" Clicked="btnStartSurvey_Clicked"   ></Button>
+				</StackLayout>
+			</StackLayout>
+		
+     	 </StackLayout>
+      </Frame>      
+	
+
+</ContentView>

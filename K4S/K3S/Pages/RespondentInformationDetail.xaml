@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:RespondentProfileQuota;assembly=RespondentProfileQuota"
+	 xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+	x:Class="K3S.RespondentInformationDetail" Title="Thông tin chi tiết" Padding="10,20,10,10">
+
+	<StackLayout>
+			 <Grid>
+		        <Grid.RowDefinitions>
+		           
+		        <RowDefinition Height="55"/>
+		        </Grid.RowDefinitions>
+		        <Grid.ColumnDefinitions>
+					<ColumnDefinition Width="85"/>
+		            <ColumnDefinition Width="*"/>					
+					<ColumnDefinition Width="85"/>
+		        </Grid.ColumnDefinitions>
+		        <Button  Text="Back" WidthRequest="120" Grid.Row="0" Grid.Column="0" Clicked="btnBack_Clicked" TextColor="White" FontSize="Small" FontAttributes="Bold" BackgroundColor="#f49131"   HorizontalOptions="Start" /> 	 		                
+				<Button  Text="Save" WidthRequest="120" Grid.Row="0" Grid.Column="2" Clicked="btnSave_Clicked" TextColor="White" FontSize="Small" FontAttributes="Bold" BackgroundColor="Red"   HorizontalOptions="Start" />
+
+            <!--<controls:ImageButton Grid.Row="0" Grid.Column="0" Clicked="btnBack_Clicked" BackgroundColor="White"  HeightRequest="75" WidthRequest="75" Source="ic_back" Orientation="ImageToLeft"  ImageHeightRequest="50" ImageWidthRequest="50" />
+            <controls:ImageButton Grid.Row="0" Grid.Column="2" HorizontalOptions="EndAndExpand"  Clicked="btnSave_Clicked" BackgroundColor="White"  HeightRequest="75" WidthRequest="75" Source="ic_next" Orientation="ImageToRight"  ImageHeightRequest="50" ImageWidthRequest="50" />-->
+
+        </Grid>
+		
+		<ScrollView>
+
+				<StackLayout Spacing="5" x:Name="layout" Orientation="Vertical">  
+				   	   <StackLayout Spacing="5" x:Name="layoutx" Orientation="Vertical">          
+							  <StackLayout
+						          Orientation="Horizontal" HorizontalOptions ="FillAndExpand">    
+									 <Label WidthRequest="100" TextColor="Black" FontSize = "15" Text="Mã xanh" VerticalOptions="Start" HorizontalOptions="Start" />
+                                      <Entry  x:Name="txtGreenID"  Keyboard="Numeric" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >					
+									 </Entry>	
+						      </StackLayout> 
+						    
+						      <StackLayout
+						          Orientation="Horizontal" HorizontalOptions ="FillAndExpand">    
+									 <Label WidthRequest="100" TextColor="Black" FontSize = "15" Text="Họ và tên" VerticalOptions="Start" HorizontalOptions="Start" />
+						             <Entry  x:Name="txtFullName"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>   			
+						      </StackLayout> 
+
+
+							 <StackLayout
+							          Orientation="Horizontal" HorizontalOptions ="FillAndExpand">    
+									 <Label WidthRequest="100" TextColor="Black" FontSize = "15" Text="Giới tính" VerticalOptions="Start" HorizontalOptions="Start" />
+									 <Picker x:Name="txtGender" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
+								   
+								    </Picker> 		         		
+						      </StackLayout> 
+
+							<StackLayout
+							          Orientation="Horizontal" HorizontalOptions ="FillAndExpand">    
+									 <Label WidthRequest="100" TextColor="Black" FontSize = "15" Text="Năm sinh" VerticalOptions="Start" HorizontalOptions="Start" />
+									 <Picker x:Name="txtYoB" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >		     
+								    </Picker> 		         		
+						     </StackLayout> 
+						
+							 <StackLayout
+							          Orientation="Horizontal" HorizontalOptions ="FillAndExpand">    
+									 <Label WidthRequest="100" TextColor="Black" FontSize = "15" Text="Điện thoại" VerticalOptions="Start" HorizontalOptions="Start" />
+                                      <Entry  x:Name="txtTelephone"  Keyboard="Numeric"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+						
+									 </Entry>			
+						      </StackLayout>
+
+							 <StackLayout
+							          Orientation="Horizontal" HorizontalOptions ="FillAndExpand">    
+									 <Label WidthRequest="100" TextColor="Black" FontSize = "15" Text="Quận" VerticalOptions="Start" HorizontalOptions="Start" />
+						           	 <Picker x:Name="txtDistrict" SelectedIndexChanged="txtDistrict_SelectedIndexChanged" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" > </Picker> 			
+						      </StackLayout>
+
+							 <StackLayout
+							          Orientation="Horizontal" HorizontalOptions ="FillAndExpand">    
+									 <Label WidthRequest="100" TextColor="Black" FontSize = "15" Text="Phường" VerticalOptions="Start" HorizontalOptions="Start" />
+						           <Picker x:Name="txtWard" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" > </Picker> 			
+						      </StackLayout>
+
+							 <StackLayout
+							          Orientation="Horizontal" HorizontalOptions ="FillAndExpand">    
+									 <Label WidthRequest="100" TextColor="Black" FontSize = "15" Text="Đường" VerticalOptions="Start" HorizontalOptions="Start" />
+						             <Entry  x:Name="txtStreet"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>   			
+						      </StackLayout>
+
+							 <StackLayout
+							          Orientation="Horizontal" HorizontalOptions ="FillAndExpand">    
+									 <Label WidthRequest="100" TextColor="Black" FontSize = "15" Text="Số nhà" VerticalOptions="Start" HorizontalOptions="Start" />
+						             <Entry  x:Name="txtAddress"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>   			
+						      </StackLayout>
+
+							 <StackLayout
+							          Orientation="Horizontal" HorizontalOptions ="FillAndExpand">    
+									 <Label WidthRequest="100" TextColor="Black" FontSize = "15" Text="Email" VerticalOptions="Start" HorizontalOptions="Start" />
+						             <Entry  x:Name="txtEmail"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>   			
+						     </StackLayout>
+					
+
+						    
+						<StackLayout>
+									
+				</StackLayout>
+							 
+				  		  </StackLayout>
+				 </StackLayout>
+
+
+	
+    </ScrollView>
+
+	</StackLayout>
+	
+
+</ContentPage>
+

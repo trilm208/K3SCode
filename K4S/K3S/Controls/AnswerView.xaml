@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="K3S.AnswerView">
+	<StackLayout>
+		 <Frame x:Name="frame" BackgroundColor="#8F043055" HasShadow="False">
+          <StackLayout
+          Orientation="Vertical"
+          Spacing="10">   
+				<StackLayout Orientation="Horizontal">
+					<Label x:Name="txtGreenID" TextColor="Red" FontAttributes="Bold" WidthRequest="120" FontSize="Medium"></Label>
+                    <Label x:Name="txtRespondentFullName" FontSize="Small"></Label>
+                    <Label x:Name="txtStatus" FontAttributes="Bold" FontSize="Small"></Label>
+				</StackLayout>
+				<StackLayout Orientation="Horizontal">
+                    <Button x:Name="btnEdit" Text="Edit" Clicked="btnView_Clicked"  TextColor="White" FontSize="12" FontAttributes="Bold" BackgroundColor="#f49131"></Button>
+                    <Button x:Name="btnSubmit" Text="Submit"  Clicked="btnSubmit_Clicked" TextColor="White" FontSize="12" FontAttributes="Bold" BackgroundColor="#f49131"></Button>
+                </StackLayout>
+     	 </StackLayout>
+      </Frame>    
+		
+	</StackLayout>
+</ContentView>
